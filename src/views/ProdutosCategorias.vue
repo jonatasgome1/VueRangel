@@ -1,16 +1,11 @@
 <template>
-    <div>
-        <div class="categorias pt-32 pb-64">
+     <div class="categorias pt-32 pb-64">
     <div class="container">
       <h3>Categorias</h3>
       <div class="display-flex gap-8 text-align-center pt-16 pb-16">
         <div>
           <img src="https://fakeimg.pl/232x300/00fbdb/060707?text=IMAGEM+AQUI&font=bebas" alt="Categoria X">
-
-          <router-link to="/CompCategorias">
           <a href="/">Categoria X</a>
-        </router-link>
-
         </div>
         <div>
           <img src="https://fakeimg.pl/232x300/00fbdb/060707?text=IMAGEM+AQUI&font=bebas" alt="Categoria X">
@@ -31,8 +26,6 @@
       </div>
     </div>
   </div>
-
-    </div>
 </template>
 
 <script>
@@ -44,3 +37,5 @@
 <style lang="scss" scoped>
 
 </style>
+
+<!--eu acho que essa view vai ter que ter o filtro dos produtos, os produtos da categoria (x y z w k ) se clicar nas categorias ele vai para essa view  -->
