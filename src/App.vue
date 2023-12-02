@@ -34,7 +34,14 @@
   </router-link>
   
 <router-view/> 
-    <teste-b/>
+    <PromoImg/>
+
+  <div class="banner-rodape pb-64">
+    <div class="container">
+      <img src="images/banner-rodape.webp" alt="Banner Rodapé">
+    </div>
+  </div>
+
 
     <h2>nome dos alunos </h2> <br>
     <p>Jonatas da Silva Gomes</p> <br>
@@ -117,13 +124,13 @@
 
 <script>
 
-import TesteB from './views/TesteB.vue';
+import PromoImg from './views/PromoImg.vue';
 import CompNav from './views/CompNav.vue';
 export default {
   name: 'HomeView',
   components: {
     CompNav,
-    TesteB
+    PromoImg
 
 
 },
@@ -149,4 +156,5 @@ h2{
 padding: 14px;
 border-radius:10px ;
 }
+
 </style>
