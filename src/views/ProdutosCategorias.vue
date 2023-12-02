@@ -26,16 +26,32 @@
       </div>
     </div>
   </div>
+
+  <div class="banner-rodape pb-64">
+    <div class="container">
+      <img src="images/banner-rodape.webp" alt="Banner Rodapé">
+    </div>
+  </div>
+
+  <h2>nome dos alunos </h2> <br>
+    <p>Jonatas da Silva Gomes</p> <br>
+    <p>Michele dos Santos </p> <br>
+    <p>Agamenon</p>
+
 </template>
 
 <script>
-    export default {
-        
-    }
+export default {
+  data() {
+    return {
+      
+    };
+  }
+}
 </script>
 
 <style lang="scss" scoped>
 
 </style>
 
-<!--eu acho que essa view vai ter que ter o filtro dos produtos, os produtos da categoria (x y z w k ) se clicar nas categorias ele vai para essa view  -->
+<!--eu acho que essa view vai ter que ter o filtro das catgorias, os produtos da categoria (x y z w k ) se clicar nas categorias ele vai para essa view  -->

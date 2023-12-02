@@ -1,5 +1,5 @@
 <template>
-  <header class="header">
+    <header class="header">
     <div class="container">
       <div class="display-flex justify-content-space-between align-items-center pt-16 pb-16">
         <a class="logo" href="/">
@@ -21,31 +21,34 @@
           <!-- CARRINHO -->
           <div class="carrinho display-flex align-items-center gap-8">
             <svg version="1.1" height="34" width="34" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 511.997 511.997" style="enable-background:new 0 0 511.997 511.997;" xml:space="preserve"><g><g><path d="M405.387,362.612c-35.202,0-63.84,28.639-63.84,63.84s28.639,63.84,63.84,63.84s63.84-28.639,63.84-63.84S440.588,362.612,405.387,362.612z M405.387,451.988c-14.083,0-25.536-11.453-25.536-25.536s11.453-25.536,25.536-25.536c14.083,0,25.536,11.453,25.536,25.536S419.47,451.988,405.387,451.988z"/></g></g><g><g><path d="M507.927,115.875c-3.626-4.641-9.187-7.348-15.079-7.348H118.22l-17.237-72.12c-2.062-8.618-9.768-14.702-18.629-14.702H19.152C8.574,21.704,0,30.278,0,40.856s8.574,19.152,19.152,19.152h48.085l62.244,260.443c2.062,8.625,9.768,14.702,18.629,14.702h298.135c8.804,0,16.477-6.001,18.59-14.543l46.604-188.329C512.849,126.562,511.553,120.516,507.927,115.875z M431.261,296.85H163.227l-35.853-150.019h341.003L431.261,296.85z"/></g></g><g><g><path d="M173.646,362.612c-35.202,0-63.84,28.639-63.84,63.84s28.639,63.84,63.84,63.84s63.84-28.639,63.84-63.84S208.847,362.612,173.646,362.612z M173.646,451.988c-14.083,0-25.536-11.453-25.536-25.536s11.453-25.536,25.536-25.536s25.536,11.453,25.536,25.536S187.729,451.988,173.646,451.988z"/></g></g></svg>
-
-              <a href="#">Carrinho</a>
-
-            
+            <a href="#">Carrinho</a>
           </div>
         </div>
       </div>
     </div>
-  </header> 
+  </header>
+
   <comp-nav/>
 
-
+  <router-link to="/CompProdutos">  
+    <h2>ir para produtos</h2>
+  </router-link>
+  
 <router-view/>
 </template>
 
 <script>
 
-import CompNav from './components/CompNav.vue';
+import CompNav from './views/CompNav.vue';
 export default {
   name: 'HomeView',
   components: {
-    CompNav
+    CompNav,
+
+
 },
 mounted() {
-  this.$http.get('URL_DA_API_DA_PLATZI/categorias')
+  this.$http.get('')
       .then(response => {
       this.categories = response.data;
         
@@ -58,5 +61,12 @@ mounted() {
 <style>
 nav a.router-link-exact-active {
   color: #42b983;
+}
+h2{
+  background-color:#42b983 ;
+  width: 30%;
+  margin: 20px;
+padding: 14px;
+border-radius:10px ;
 }
 </style>

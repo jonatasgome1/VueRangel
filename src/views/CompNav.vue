@@ -1,5 +1,4 @@
 <template>
-    <div>
         <nav>
     <div class="container display-flex align-items-center justify-content-space-between pt-16 pb-16">
         <router-link to="/ProdutosCategorias"> 
@@ -21,14 +20,15 @@
         <router-link to="/ProdutosCategorias"> 
             <a href="/ProdutosFiltrados">Categoria k</a>
         </router-link>
-        
-<!--esse componente foi feito para o nav todos esses links levam para view Produtos listados -->
-
-      
+            
     </div>
   </nav>
-    </div>
+
+ 
+    
+    
 </template>
+<!--esse componente foi feito para o nav todos esses links levam para view Produtos listados -->
 
 <script>
     export default {
