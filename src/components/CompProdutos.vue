@@ -34,10 +34,6 @@
     </div>
 </div>
 
-<h2>nome dos alunos </h2> <br>
-    <p>Jonatas da Silva Gomes</p> <br>
-    <p>Michele dos Santos </p> <br>
-    <p>Agamenon</p>
 </template>
 
 <script>
